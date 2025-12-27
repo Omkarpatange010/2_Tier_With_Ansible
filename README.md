@@ -31,16 +31,18 @@ Using Ansible’s automation capabilities, infrastructure is defined as code and
 
 ### 📌 `inventory.ini`
 
-Defines host groups for Ansible:
+    Defines host groups for Ansible:
 
-```ini
-[web]
-# Add your web server hosts here
-web1 ansible_host=YOUR_WEB_SERVER_IP
+    ```ini
+    [web]
+    # Add your web server hosts here
+    web1 ansible_host=YOUR_WEB_SERVER_IP
 
-[db]
-# Add your database server hosts here
-db1 ansible_host=YOUR_DB_SERVER_IP
+    [db]
+    # Add your database server hosts here
+    db1 ansible_host=YOUR_DB_SERVER_IP
+
+
 📌 2-tier.yml
 The main Ansible playbook that runs roles/tasks against the web and db groups.
 
@@ -63,7 +65,7 @@ Ansible flow
 
 Deployment design visuals
 
-🚀 How to Run
+🚀 How to Run <br>
 Make sure Ansible is installed on your control machine
 
 bash
